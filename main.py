@@ -93,6 +93,9 @@ def donate():
 
     return render_template('donate.html')
 
+@app.route('/enable.html')
+def hometest():
+    return render_template('enable.html')
 
 @app.route('/email', methods=["POST"])
 def email():
